@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{%block title%}Contact{%endblock title%}
+
+
+{% block body %} 
+<body data-new-gr-c-s-check-loaded="14.1007.0" data-gr-ext-installed="" style="
+    background: #50a2ad;">
+{% comment %} --------------------Image Start here------------------------  {% endcomment %}
+<style type="text/css">
+        pic {
+            width: 50%;
+        }
+
+        pic img {
+            float: center;
+            margin: 30px 60px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+    </style>
+
+<div id="pic" class="container-fluid px-0">
+<img src="/static/photo/contact_us4.jpg" class="center" alt="pic" >
+</div>
+{% comment %} --------------------Image End here------------------------  {% endcomment %}
+{% comment %} -----------------------------------------contact and address--------------------------------------------- {% endcomment %}
+<div class="container my-4">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-white" style="background-color: #c28285;text-transform: capitalize;font-style: oblique;text-align: -webkit-center;"><i class="fa fa-envelope"></i>Contact us.</div>
+                <div class="card-body">
+                    <form method="post" action="/contact">
+                    {% csrf_token %}
+                        <div class="form-group">
+                            <label for="name">Name </label>
+                            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="Enter name" required="">
+                        </div>
+                        <div class="form-group my-1">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required="">
+                            <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group my-1">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" placeholder="Enter message " required="" id="message" name="desc" rows="4" ></textarea>
+                        </div>
+                        <div class="mx-auto">
+                        <button type="submit" class="btn text-right my-2" style="background-color: #000000;color:white;" >Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="card bg-light my-2">
+                <div class="card-header text-white text-uppercase" style="background-color: #c28285;text-transform: capitalize;font-style: oblique;text-align: -webkit-center;"><i class="fa fa-home"></i> Address</div>
+                <div class="card-body">
+                    <p>--------</p>
+                    <p>--------</p>
+                    <p>India</p>
+                    <p>Email : Hardik.work@protonmail.com</p>
+                    <p>Phone : 9754262629</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock body %}

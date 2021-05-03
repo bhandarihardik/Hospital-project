@@ -1,0 +1,304 @@
+{% extends 'base.html' %}
+
+{% block title %} {% endblock title %}
+
+
+{% block body %}
+{% load social_share %}
+
+<!-- Red display line -->
+<div class="container-fluid my-2" style="padding: inherit;">
+    <marquee>
+        <h2 style="color:#f30000;font-size: medium;font-style: oblique;">The data displayed on this screen is not
+            correct and it
+            is only for testing purpose as the application is under testing phase</h2>
+    </marquee>
+    <!-- Red display line end -->
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <!-- slide photo start -->
+    <style type="text/css">
+        pic {
+            width: 50%;
+        }
+
+        pic img {
+            float: center;
+            margin: 30px 60px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+       
+
+    </style>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/photo/covid_hero2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 style="color: #000000d6;font-style: italic;"><b>Real Heros</b></h4>
+                    <p style="color: #000000cf;"><b>It as an ideal time for each and everyone of us to salute
+                            and give thanks to the thousands of doctors caring for #COVID19 patients. They are
+                            the real superheroes!
+                        </b></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/photo/covid_hero1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 style="color: #000000d6;font-style: italic;"><b>You Can Be Your Own Hero</b></h4>
+                    <p style="color: #000000cf;"><b>Wash your hands,Cover your cough or sneeze with a
+                            tissue, Maintain at least 1 meter (3 feet) distance between yourself and other
+                            people,Mantain social distancing,Stay home and self-isolate even with minor
+                            symptoms #IAmHeroToo</b></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/photo/covid_hero4.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 style="color: #000000d6;font-style: italic;"><b>#WearAMask</b></h4>
+                    <p style="color: #000000cf;"><b>When you #WearAMask, you’re protecting yourself and everyone
+                            around you. Show us how you #MaskUp.</b></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/photo/covid_hero5.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 style="color: #000000d6;font-style: italic;"><b>#COVID19</b></h4>
+                    <p style="color: #000000cf;"><b>COVID-19 has affected the world at large, but this has also given us a glimpse of the good that exists.</b></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- slide photo end -->
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <!------------------------------------------- Vaccine starting -------------------------------------------->
+    <div class="container my-3">
+        <h1 class="my-4 text-center">Vaccine</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/photo/vacine.jpeg" class="d-block w-100" alt="pic" width="100" height="250">
+
+                    <div class="card-body">
+                        <p class="card-text">Register yourself from here for your first corona vaccine
+                            #IndiaFightCorona
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                    href="https://selfregistration.cowin.gov.in/"
+                                    style=" background: black;text-transform: uppercase;">Register</a>
+
+                            </div>
+                            <small class="text-muted">#Go Corona</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/photo/side_effect.jpg" class="d-block w-100" alt="pic" width="100" height="275">
+
+                    <div class="card-body">
+                        <p class="card-text">Common symptoms of vaccine.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary" href="/side_effect"
+                                    style=" background: black;text-transform: uppercase;">Read More</a>
+                            </div>
+                            <small class="text-muted">#IndiaFightCorona</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="/static/photo/certificate.jpg" class="d-block w-100" alt="pic" width="100" height="226">
+
+                    <div class="card-body">
+                        <p class="card-text">Finally get your vaccine certificate also you got message when you are
+                            eligible
+                            for certificate.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                    href="https://selfregistration.cowin.gov.in/"
+                                    style=" background: black;text-transform: uppercase;">Certificate</a>
+                            </div>
+                            <small class="text-muted">#WeDidIt</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------Vaccine-End--------------------------------------------------------         -->
+            <style >
+                @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+
+    color: #FFF;
+
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-github:hover {
+    background-color: #5a32a3;
+}
+
+            </style>
+            <div class="footer-social-icons my-2">
+                <!-- <h4 class="_14"style="color: grey;"> Follow us on</h4> -->
+                <ul class="social-icons">
+                    <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endblock body %}
