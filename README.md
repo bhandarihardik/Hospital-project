@@ -17,3 +17,5 @@ Best and Simple hospital webpage using < Django >
                            
    Schreenshot_CONTACT-US_Hospital :
                            https://user-images.githubusercontent.com/26357600/116857696-dc4b9480-ac1a-11eb-8f12-abaf19e3c234.png
+
+"Note" :- It's not completely build just give some more effort and make it best.
